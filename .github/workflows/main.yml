@@ -1,0 +1,25 @@
+name: Port
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up 
+      run: |
+              apt update
+              apt upgrade
+              apt install tree aria2
+              sudo apt install git -y
+              # 克隆项目
+              git clone https://github.com/toraidl/hyperos_port.git
+              cd hyperos_port
+              # 安装依赖
+              sudo ./setup.sh
+              #Download
+              
+              # 开始移植
+              sudo ./port.sh <底包路径> <移植包路径>
