@@ -10,10 +10,10 @@ jobs:
     steps:
     - name: Set up 
       run: |
-              apt update
-              apt upgrade
-              apt install tree aria2
-              sudo apt install git -y
+              sudo apt update
+              sudo apt upgrade
+              sudo apt install tree aria2 git -y
+              
               # 克隆项目
               git clone https://github.com/toraidl/hyperos_port.git
               cd hyperos_port
