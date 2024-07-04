@@ -19,7 +19,7 @@ jobs:
               # 安装依赖
               sudo ./setup.sh
               #Download
-              aria2c -o "1.zip" https://bn.d.miui.com/OS1.0.5.0.ULTCNXM/mayfly_images_OS1.0.5.0.ULTCNXM_20240318.0000.00_14.0_cn_a4b10bb606.tgz
+              aria2c -o "1.zip" https://bn.d.miui.com/OS1.0.24.6.24.DEV/miui_MAYFLY_OS1.0.24.6.24.DEV_1061781ad5_14.0.zip
               aria2c -o "2.zip" https://bn.d.miui.com/OS1.0.15.0.UNACNXM/miui_AURORA_OS1.0.15.0.UNACNXM_d2975034eb_14.0.zip
             
               # 开始移植
