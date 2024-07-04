@@ -37,7 +37,7 @@ jobs:
               sudo ./setup.sh
               #Download
               aria2c -o "1.zip" https://bn.d.miui.com/OS1.0.24.6.24.DEV/miui_MAYFLY_OS1.0.24.6.24.DEV_1061781ad5_14.0.zip
-              aria2c -o "2.zip" https://cdn.cnbj1.fds.api.mi-img.com/pangu-release-artifacts/full-ota-package/miui_HOUJIPREDPP_OS1.0.240520.1.VNCCNXM.PRE-DPP_f67f17f6e5_15.0.zip?GalaxyAccessKeyId=AKOZDLMWQMNEU5OCJW&Expires=1747972800000&?GalaxyAccessKeyId=AKOZDLMWQMNEU5OCJW&Expires=1747972800000&Signature=di60Po1O68yfc/6IdHYFUtPM7Gk=
+              aria2c -o "2.zip" https://bn.d.miui.com/OS1.0.24.6.29.DEV/miui_HOUJI_OS1.0.24.6.29.DEV_d0e7a173e4_14.0.zip
             
               # 开始移植
               sudo ./port.sh ./1.zip ./2.zip
