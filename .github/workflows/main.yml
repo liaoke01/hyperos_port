@@ -8,22 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-    - name: Remove unused packages
-      uses: jlumbroso/free-disk-space@main
-      with:
-        tool-cache: ture
-        android: false
-        dotnet: true
-        haskell: true
-        large-packages: true
-        docker-images: true
-        swap-storage: false
-
-    - name: Set swap to 10G
-      uses: pierotofy/set-swap-space@master
-      with:
-        swap-size-gb: 10
         
     - name: Set up 
       run: |
