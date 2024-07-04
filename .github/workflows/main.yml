@@ -11,7 +11,6 @@ jobs:
     - name: Set up 
       run: |
               sudo apt update
-              sudo apt upgrade
               sudo apt install tree aria2 git -y
               
               # 克隆项目
