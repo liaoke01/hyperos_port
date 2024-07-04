@@ -11,7 +11,7 @@ jobs:
     - name: Set up 
       run: |
               sudo apt update
-              sudo apt install tree aria2 git -y
+              sudo apt install tree aria2 git
               
               # 克隆项目
               git clone https://github.com/toraidl/hyperos_port.git
